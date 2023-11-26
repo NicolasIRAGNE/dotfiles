@@ -1,0 +1,8 @@
+[Unit]
+Description=Change Wallpaper
+
+[Service]
+ExecStart=%h/.config/hypr/swww_random_once.sh %h/.config/assets/wallpapers/
+
+[Install]
+WantedBy=swww_change.timer

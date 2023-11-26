@@ -1,0 +1,61 @@
+if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
+    alias pbcopy='wl-copy'
+    alias pbpaste='wl-paste'
+elif [[ $XDG_SESSION_TYPE == "x11" ]]; then
+    alias pbcopy='xsel --clipboard --input'
+    alias pbpaste='xsel --clipboard --output'
+fi
+
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
+
+ssh-edit() {
+  if [ "$#" -lt 2 ]; then
+    echo "Usage: ssh-edit <remote_file> <host1> [<host2> ...]"
+    return 1
+  fi
+
+  local remote_file=$1
+  shift
+  local hosts=("$@")
+  local local_file=$(basename "$remote_file")
+
+  edit_file() {
+    if [ -n "$EDITOR" ]; then
+      eval "$EDITOR \"$1\""
+    else
+      vim "$1"
+    fi
+  }
+
+  for host in "${hosts[@]}"; do
+    echo "Processing $host..."
+
+    # Download the remote file to edit locally
+    scp "$host:$remote_file" "$local_file"
+    if [ "$?" -ne 0 ]; then
+      echo "Failed to download file from $host."
+      return 1
+    fi
+
+    # Open the file with the specified editor
+    edit_file "$local_file"
+
+    # Upload the edited file back to the remote server
+    scp "$local_file" "$host:$remote_file"
+    if [ "$?" -ne 0 ]; then
+      echo "Failed to upload file to $host."
+      return 1
+    fi
+
+    echo "File successfully edited and uploaded back to $host."
+  done
+}
+
+alias -g OSEF='2>/dev/null'
+alias -g FTG='&>/dev/null'
+alias -g MENFOU='&>/dev/null'
+alias -g MENBRANLE='&>/dev/null'
+alias -g RIENAFOUTRE='&>/dev/null'
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
