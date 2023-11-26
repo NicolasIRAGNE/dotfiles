@@ -1,8 +1,0 @@
-[Unit]
-Description=Change Wallpaper
-
-[Service]
-ExecStart=~/.config/hypr/swww_random_once.sh ~/.config/assets/wallpapers/
-
-[Install]
-WantedBy=multi-user.target
