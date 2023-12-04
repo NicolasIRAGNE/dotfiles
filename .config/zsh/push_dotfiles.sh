@@ -29,7 +29,7 @@ if [ "$FAILED" = true ]; then
 fi
 
 # Construct commit message
-commit_message="Automatic commit from $(hostname) on $(date '+%Y-%m-%d %H:%M:%S')"
+commit_message="Automatic commit from $(hostname) on $(date '+%d-%m-%Y %H:%M:%S')"
 
 echo "$commit_message"
 
