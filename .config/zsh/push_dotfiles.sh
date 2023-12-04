@@ -45,3 +45,5 @@ if [ "$FAILED" = true ]; then
     echo "Check $LOGFILE for more details"
     exit 1
 fi
+
+notify-send "Dotfiles push successful" "Dotfiles have been pushed to the repository"
