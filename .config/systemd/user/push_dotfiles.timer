@@ -1,0 +1,8 @@
+[Unit]
+Description=Timer to push dotfiles to github
+
+[Timer]
+OnCalendar=daily
+
+[Install]
+WantedBy=timers.target

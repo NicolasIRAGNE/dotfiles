@@ -1,0 +1,8 @@
+[Unit]
+Description=Push Dotfiles to Github
+
+[Service]
+ExecStart=%h/.config/zsh/push_dotfiles.sh
+
+[Install]
+WantedBy=push_dotfiles.timer
