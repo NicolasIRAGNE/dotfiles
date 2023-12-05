@@ -19,6 +19,7 @@ ssh-edit() {
   shift
   local hosts=("$@")
   local local_file=$(basename "$remote_file")
+  local_file="/tmp/$local_file"
 
   edit_file() {
     if [ -n "$EDITOR" ]; then
@@ -31,11 +32,12 @@ ssh-edit() {
   for host in "${hosts[@]}"; do
     echo "Processing $host..."
 
+    rm -f "$local_file"
     # Download the remote file to edit locally
     scp "$host:$remote_file" "$local_file"
     if [ "$?" -ne 0 ]; then
       echo "Failed to download file from $host."
-      return 1
+      echo "It will be created locally and uploaded back to $host."
     fi
 
     # Open the file with the specified editor
