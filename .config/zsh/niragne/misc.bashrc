@@ -6,8 +6,11 @@ elif [[ $XDG_SESSION_TYPE == "x11" ]]; then
     alias pbpaste='xsel --clipboard --output'
 fi
 
-bindkey '^H' backward-kill-word
-bindkey '5~' kill-word
+# if TERM is not xterm
+if [[ "$TERM" != "xterm" ]]; then
+  bindkey '^H' backward-kill-word
+  bindkey '5~' kill-word
+fi
 
 ssh-edit() {
   if [ "$#" -lt 2 ]; then
