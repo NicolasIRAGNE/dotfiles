@@ -64,3 +64,5 @@ alias -g MENBRANLE='&>/dev/null'
 alias -g RIENAFOUTRE='&>/dev/null'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+eval $(thefuck --alias)
