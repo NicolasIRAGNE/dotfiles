@@ -29,3 +29,4 @@ function command_not_found_handler {
         done
     fi
 }
+

@@ -66,3 +66,12 @@ alias -g RIENAFOUTRE='&>/dev/null'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 eval $(thefuck --alias)
+
+if command -v exa &> /dev/null; then
+    alias ls='exa'
+    alias ll='exa -l'
+    alias la='exa -la'
+    alias l='exa -l --git'
+else
+    echo "$0:$LINENO WARN: exa not found, not replacing ls"
+fi
