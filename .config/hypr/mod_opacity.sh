@@ -17,7 +17,7 @@ if [ "$#" = "2" ]; then
     inactive_opacity=$(echo "$inactive_opacity $1 $2" | bc)
 else
     active_opacity="0.98"
-    inactive_opacity="0.9"
+    inactive_opacity="0.92"
 fi
 
 echo "$active_opacity:$inactive_opacity"
