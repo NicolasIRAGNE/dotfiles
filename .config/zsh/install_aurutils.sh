@@ -30,3 +30,9 @@ repo-add /var/cache/pacman/custom/custom.db.tar
 
 # Step 3: Synchronize pacman
 sudo pacman -Syu
+
+# Step 4: Install aurutils with aurutils
+aur sync -Su aurutils
+sudo pacman -Syu
+
+
