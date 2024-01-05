@@ -6,6 +6,9 @@ elif [[ $XDG_SESSION_TYPE == "x11" ]]; then
     alias pbpaste='xsel --clipboard --output'
 fi
 
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
 # if TERM is not xterm
 if [[ "$TERM" != "xterm" ]]; then
   bindkey '^H' backward-kill-word
@@ -69,9 +72,6 @@ eval $(thefuck --alias)
 
 if command -v exa &> /dev/null; then
     alias ls='exa'
-    alias ll='exa -l'
-    alias la='exa -la'
-    alias l='exa -l --git'
 else
     echo "$0:$LINENO WARN: exa not found, not replacing ls"
 fi

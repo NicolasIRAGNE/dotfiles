@@ -246,7 +246,7 @@
         "format": "{}",
         "interval": 1,
         "exec":"whoami",
-        // "exec":"bash ~/.config/waybar/modules/shadowpc.sh",
+        "exec":"bash ~/.config/waybar/modules/shadowpc.sh",
         "on-click": "~/repos/tokenizator/tokenizator.py start $SHADOW_VM_MAIL > /tmp/shadowpc_token 2>/tmp/tokenizator.log",
         "on-click-right": "cat /tmp/shadowpc_token | wl-copy",
         // "on-click-right": "/home/niragne/repos/unified/build/ShadowPCDisplay `cat /tmp/shadowpc_token` --video-renderer FFmpeg",
