@@ -103,6 +103,7 @@ source ~/.config/zsh/$USER/omz.zshrc
 # source ~/.config/zsh/$USER/unity.bashrc
 source ~/.config/zsh/$USER/hyprland.bashrc
 source ~/.config/zsh/$USER/shadow.bashrc
+source ~/.config/zsh/$USER/rust.bashrc
 
 source $ZSH/oh-my-zsh.sh
 
