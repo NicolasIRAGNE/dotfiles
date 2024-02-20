@@ -9,6 +9,8 @@ fi
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # if TERM is not xterm
 if [[ "$TERM" != "xterm" ]]; then
   bindkey '^H' backward-kill-word
@@ -67,6 +69,8 @@ alias -g MENBRANLE='&>/dev/null'
 alias -g RIENAFOUTRE='&>/dev/null'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+alias golmon=go
 
 eval $(thefuck --alias)
 
