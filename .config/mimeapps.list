@@ -1,0 +1,37 @@
+[Default Applications]
+x-scheme-handler/slack=slack.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+text/html=google-chrome.desktop
+x-scheme-handler/mailto=google-chrome.desktop
+x-scheme-handler/webcal=google-chrome.desktop
+application/json=code.desktop
+x-scheme-handler/discord-719647875465871400=discord-719647875465871400.desktop
+x-scheme-handler/discord-618471189722955807=discord-618471189722955807.desktop
+x-scheme-handler/ror2mm=r2modman.desktop
+application/octet-stream=code.desktop
+x-scheme-handler/nc=tech.shadow.drive.shadow-drive.desktop
+x-scheme-handler/chrome=google-chrome.desktop
+application/x-extension-htm=google-chrome.desktop
+application/x-extension-html=google-chrome.desktop
+application/x-extension-shtml=google-chrome.desktop
+application/xhtml+xml=google-chrome.desktop
+application/x-extension-xhtml=google-chrome.desktop
+application/x-extension-xht=google-chrome.desktop
+
+[Added Associations]
+application/json=code.desktop;
+x-scheme-handler/slack=slack.desktop;
+application/x-shellscript=code.desktop;
+application/octet-stream=code.desktop;
+image/png=google-chrome.desktop;okularApplication_kimgio.desktop;feh.desktop;
+x-scheme-handler/http=google-chrome.desktop;
+x-scheme-handler/https=google-chrome.desktop;
+x-scheme-handler/chrome=google-chrome.desktop;
+text/html=google-chrome.desktop;
+application/x-extension-htm=google-chrome.desktop;
+application/x-extension-html=google-chrome.desktop;
+application/x-extension-shtml=google-chrome.desktop;
+application/xhtml+xml=google-chrome.desktop;
+application/x-extension-xhtml=google-chrome.desktop;
+application/x-extension-xht=google-chrome.desktop;
