@@ -19,7 +19,7 @@ export SWWW_TRANSITION_STEP=2
 echo "Setting up random wallpaper from $1"
 
 # select one random image from the directory and set it as wallpaper
-find "$1" -type f \
+find "$1" -type f -maxdepth 1 \
 	| shuf -n 1 \
 	| while read -r img; do
 		swww img "$img" --transition-type random
