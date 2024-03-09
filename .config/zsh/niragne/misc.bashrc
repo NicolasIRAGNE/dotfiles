@@ -9,6 +9,8 @@ fi
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
+export FZF_DEFAULT_OPTS='--height 50% --border'
+
 export PATH="$HOME/.local/bin:$PATH"
 
 # if TERM is not xterm
@@ -71,6 +73,11 @@ alias -g RIENAFOUTRE='&>/dev/null'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias golmon=go
+
+function h()
+{
+  gh copilot suggest $@
+}
 
 eval $(thefuck --alias)
 
