@@ -26,7 +26,7 @@
         "custom/pacman"
     ],
     "modules-center": [
-        "custom/weather",
+        // "custom/weather",
         "clock#date"
     ],
     "modules-right": [
