@@ -1,6 +1,6 @@
 plugins+=(sudo)
 plugins+=(kubectl)
 plugins+=(alias-tips)
-plugins+=(autojump)
+# plugins+=(autojump)
 # plugins+=(fzf-zsh-plugin)
 plugins+=(dirhistory)
