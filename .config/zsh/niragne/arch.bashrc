@@ -2,8 +2,6 @@ alias aurinstall='function _aurinstall(){aur sync "$1" && sudo pacman -S "$1"}; 
 
 alias kssh='function _kssh(){kitty +kitten ssh "$1"}; _kssh'
 
-plugins+=(archlinux)
-
 function command_not_found_handler {
     local purple='\e[1;35m' bright='\e[0;1m' green='\e[1;32m' reset='\e[0m'
     printf 'zsh: command not found: %s\n' "$1"

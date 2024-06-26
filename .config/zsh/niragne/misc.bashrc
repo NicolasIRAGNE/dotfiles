@@ -86,3 +86,5 @@ if command -v exa &> /dev/null; then
 else
     echo "$0:$LINENO WARN: exa not found, not replacing ls"
 fi
+
+eval "$(fasd --init auto)"
