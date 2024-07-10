@@ -1,6 +1,6 @@
 plugins+=(sudo)
 plugins+=(kubectl)
-plugins+=(alias-tips)
+# plugins+=(alias-tips)
 plugins+=(dirhistory)
 plugins+=(archlinux)
 plugins+=(virtualenv)
