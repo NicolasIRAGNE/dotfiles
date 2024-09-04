@@ -19,6 +19,7 @@ application/xhtml+xml=google-chrome.desktop
 application/x-extension-xhtml=google-chrome.desktop
 application/x-extension-xht=google-chrome.desktop
 x-scheme-handler/discord-838386853396348929=discord-838386853396348929.desktop
+x-scheme-handler/tonsite=org.telegram.desktop.desktop
 
 [Added Associations]
 application/json=code.desktop;
@@ -37,3 +38,4 @@ application/xhtml+xml=google-chrome.desktop;
 application/x-extension-xhtml=google-chrome.desktop;
 application/x-extension-xht=google-chrome.desktop;
 video/mp4=vlc.desktop;
+x-scheme-handler/tonsite=org.telegram.desktop.desktop;
