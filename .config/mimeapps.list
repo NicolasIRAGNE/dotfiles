@@ -25,6 +25,7 @@ x-scheme-handler/slack=slack.desktop;Slack.desktop;
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 x-scheme-handler/webcal=google-chrome.desktop;
 x-scheme-handler/ror2mm=r2modman.desktop;
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop;
 
 [Default Applications]
 application/json=cursor-cursor.desktop;
@@ -54,3 +55,4 @@ x-scheme-handler/ror2mm=r2modman.desktop
 x-scheme-handler/slack=slack.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
 x-scheme-handler/webcal=google-chrome.desktop
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
