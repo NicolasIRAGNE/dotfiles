@@ -5,6 +5,7 @@ x-scheme-handler/nc=tech.shadow.drive.shadow-drive.desktop;
 x-scheme-handler/http=google-chrome.desktop
 x-scheme-handler/https=google-chrome.desktop
 text/html=google-chrome.desktop
+x-scheme-handler/webcal=google-chrome.desktop
 
 [Default Applications]
 x-scheme-handler/slack=slack.desktop
@@ -13,3 +14,4 @@ x-scheme-handler/nc=tech.shadow.drive.shadow-drive.desktop
 x-scheme-handler/http=google-chrome.desktop
 x-scheme-handler/https=google-chrome.desktop
 text/html=google-chrome.desktop
+x-scheme-handler/webcal=google-chrome.desktop
